@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweepwr</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body onload="levelSelection(2)">
+    <h1>Mark the mines without exploding</h1>
+    <h2>Select a difficulty level</h2>
+
+    <button class="button" onclick="levelSelection(1)">Junior</button>
+    <button class="button" onclick="levelSelection(2)">Middle</button>
+    <button class="button" onclick="levelSelection(3)">Specialist</button>
+
+    <p class="smiley smiley-1">&#128512</p>
+    <p class="smiley smiley-2">&#129327</p>
+    <p class="smiley smiley-3">&#128526</p>
+
+    <table>
+        <tbody class="board"></tbody>
+    </table>
+    <p class="count"></p>
+
+    <button class="button" onclick="initGame(3)">Restart</button>
+
+    <p class="end gameover">GAME OVER</p>
+    <p class="end win">YOU WIN!!</p>
+
+    <h2>Israel Weiss</h2>
+    
+    <script src="js/util.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+
+</html>
